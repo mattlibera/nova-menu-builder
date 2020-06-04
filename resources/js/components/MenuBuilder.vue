@@ -4,6 +4,7 @@
     @input="val => $emit('input', val)"
     @change="$emit('onChangeMenu')"
     classProp="classProp"
+    maxDepth="3"
   >
     <vue-nestable-handle slot-scope="{ item }" :item="item" class="handle flex flex-wrap">
       <div :class="`item-data w-2/3 flex ${!hasChildren(item) && 'pl-3'}`">
